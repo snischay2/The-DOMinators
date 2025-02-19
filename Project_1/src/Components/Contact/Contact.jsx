@@ -15,7 +15,7 @@ const Contact = () => {
         if(Values.name === '' || Values.phonenumber === '' || Values.emailid === '' || Values.anymessage === ''){
             alert('All fields are mandatory');
         }else{
-            await axios.post('http://https://the-dominators-5kpzyfw0f-snischay2s-projects.vercel.app/api/v1/post', Values).then((res) => {
+            await axios.post('https://the-dominators-5kpzyfw0f-snischay2s-projects.vercel.app/api/v1/post', Values).then((res) => {
                 alert(res.data.message);
 
             });
