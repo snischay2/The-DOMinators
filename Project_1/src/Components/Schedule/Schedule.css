@@ -1,0 +1,45 @@
+.react-calendar{
+    color: #ff0000;
+    width: 350px;
+    max-width: 100%;
+    background: white;
+    border: 2px solid #a0a096;
+    border-radius:10px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.125em;
+}
+
+.react-calendar button {
+    color: black;
+    
+}
+
+.react-calendar__tile--now {
+    background: #3652ef;
+}
+
+.input {
+    margin-top: 10px;
+}
+
+.add{
+    width: 94%;
+    margin-top:10px;
+}
+
+h2{
+    margin-left:11%;
+}
+
+input, select {
+    padding: 12px 20px;
+    margin: 8px .5em 0 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:last-child {
+margin-inline: 0;
+}

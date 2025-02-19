@@ -1,0 +1,44 @@
+body{
+    background-image: url('../../assets/back.jpg');
+    background-size: cover;
+}
+.form{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+div{
+    text-align: center;
+}
+.box{
+    margin-bottom: 40px;
+}
+.de input{
+    height: 40px;
+    width: 400px;
+    border: none ;
+    background-color: rgba(255, 255, 255, 0.835);
+    font-size: 0.8rem;
+    margin-top: 16px;
+   
+}
+.box label{
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.704);
+}
+textarea{
+    border: none ;
+    background-color: rgba(255, 255, 255, 0.835);
+    height: 100px;
+    width: 400px;
+    font-size: 0.9rem;
+    margin-top:16px ;
+}
+.submit-box input{
+    background-color: black;
+    color: rgba(245, 245, 245, 0.773);
+    height: 37px;
+    width: 85px;
+    border-radius: 10%;
+}
