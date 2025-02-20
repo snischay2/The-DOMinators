@@ -12,7 +12,7 @@ const AttendancePage = () => {
 
   const fetchAttendance = async () => {
     try {
-      const res = await axios.get("https://the-dominators-5kpzyfw0f-snischay2s-projects.vercel.app/api/v1/attendance");
+      const res = await axios.get("http://localhost:1000/api/v1/attendance");
       console.log("Fetched Data:", res.data);
       setAttendance(res.data);
     } catch (error) {
@@ -22,7 +22,7 @@ const AttendancePage = () => {
 
   const updateAttendance = async () => {
     try {
-      await axios.put("https://the-dominators-5kpzyfw0f-snischay2s-projects.vercel.app/api/v1/attendance/update", {
+      await axios.put("http://localhost:1000/api/v1/attendance/update", {
         totalClasses: Number(totalClasses) || 0, 
         attendedClasses: Number(attendedClasses) || 0,
       });

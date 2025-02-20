@@ -19,7 +19,7 @@ const SchedulePage = () => {
   }, []);
 
   const fetchSchedule = async () => {
-    const res = await axios.get("https://the-dominators-5kpzyfw0f-snischay2s-projects.vercel.app/api/schedule");
+    const res = await axios.get("http://localhost:1000/api/schedule");
     setSchedule(res.data);
   };
 
@@ -30,13 +30,13 @@ const SchedulePage = () => {
   const addSchedule = async (e) => {
     e.preventDefault();
     console.log(newSchedule);
-    await axios.post("https://the-dominators-5kpzyfw0f-snischay2s-projects.vercel.app/api/schedule", newSchedule);
+    await axios.post("http://localhost:1000/api/schedule", newSchedule);
     fetchSchedule();
     setNewSchedule({ title: "", date: "", time: "", type: "class", description: "" });
   };
 
   const deleteSchedule = async (id) => {
-    await axios.delete(`https://the-dominators-5kpzyfw0f-snischay2s-projects.vercel.app/api/schedule/${id}`);
+    await axios.delete(`http://localhost:1000/api/schedule/${id}`);
     fetchSchedule();
   };
 
