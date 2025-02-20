@@ -12,6 +12,7 @@ import Login from './Components/Login/Login'
 import Materials from './Components/Materials/Materials'
 import AttendancePage from './Components/AttendancePage/AttendancePage'
 import AAbout from './Components/AAbout/AAbout' 
+import VideoDemo from './Components/VideoDemo/VideoDemo'
 
 import {createBrowserRouter , RouterProvider } from 'react-router-dom'
 const router = createBrowserRouter(
@@ -22,7 +23,6 @@ const router = createBrowserRouter(
         <Navbar/>
         <Hero/>
         <div className="container">
-          <Title subtitle='Our PROGRAM' title='What We Offer'/>
           <Programs/>
           <About/>
         </div>
@@ -31,6 +31,7 @@ const router = createBrowserRouter(
     {path:"/schedule",
       element:
       <div>
+        <Title subtitle='Our PROGRAM' title='What We Offer'/>
         <Navbar/>
         <Schedule/>
       </div>

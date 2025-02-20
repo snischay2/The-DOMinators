@@ -42,7 +42,7 @@ const SchedulePage = () => {
 
   return (
     <div>
-      <h2>Schedule Page</h2>
+      <h2 className="schedule">Schedule Page</h2>
 
       {/* Calendar */}
       <Calendar />

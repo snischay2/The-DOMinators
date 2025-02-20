@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon Backend/app.js",
     "build": "npm install && npm install --prefix Project_1 && npm run build --prefix Project_1",
-    "start": "node Backend/app.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
